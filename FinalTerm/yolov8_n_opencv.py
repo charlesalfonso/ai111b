@@ -23,7 +23,7 @@ model = YOLO("weights/yolov8n.pt", "v8")
 frame_wid = 640
 frame_hyt = 480
 
-cap = cv2.VideoCapture("inference/videos/afriq1.MP4")
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("Cannot open camera")
